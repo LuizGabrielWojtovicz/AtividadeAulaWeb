@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="local">
+        <img src="/_semafaros/desligado.png" alt="desligado">
+    </p>
+    <p id = "local2">
+        <button onclick="ativ_10_comecar()">comecar</button>
+    </p>
+    
+
+    <script>
+        var i = 0;
+        var intervalo;
+        function ativ_10_comecar()
+        {
+            document.getElementById("local2").innerHTML = "<button onclick='ativ_10_parar()'>parar</button>";
+
+            intervalo = setInterval(ativ_09, 3000)
+        }
+        function ativ_10_parar()
+        {
+            clearInterval(intervalo);
+            
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/desligado.png' alt='desligado'>";
+        }
+        function ativ_09()
+        {
+            i++;
+            console.log(i);
+            if(i == 4)
+            {
+                i = 1;
+            }
+
+            if(i == 1)
+            {
+                logVermelho();
+            }
+            else if(i == 2)
+            {
+                logAmarelo();
+            }
+            else if(i == 3)
+            {
+                logVerde();
+            }
+        }
+        function logVermelho()
+        {
+            var vermelho = "/_semafaros/vermelho.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/vermelho.png' alt='vermelho'>";
+        }
+        function logAmarelo()
+        {
+            var vermelho = "/_semafaros/amarelo.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/amarelo.png' alt='amarelo'>";
+        }
+        function logVerde()
+        {
+            var vermelho = "/_semafaros/verde.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/verde.png' alt='verde'>";
+        }
+    </script>
+</body>
+</html>
