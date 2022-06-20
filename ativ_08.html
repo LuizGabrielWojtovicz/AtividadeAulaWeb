@@ -72,4 +72,43 @@ Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/LuizGabrielWojtovicz/AtividadeAulaWeb.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
-PS C:\Users\Aluno\Desktop\aula> -->
+PS C:\Users\Aluno\Desktop\aula> 
+
+hint: Maybe you wanted to say 'git add .'?      
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS C:\Users\Aluno\Desktop\aula> git add .
+PS C:\Users\Aluno\Desktop\aula> git commit -m "atualização"
+ 1 file changed, 56 insertions(+)
+ create mode 100644 ativ_09.html
+PS C:\Users\Aluno\Desktop\aula> git push
+To https://github.com/LuizGabrielWojtovicz/AtividadeAulaWeb.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/LuizGabrielWojtovicz/AtividadeAulaWeb.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Aluno\Desktop\aula> git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.78 KiB | 12.00 KiB/s, done.
+From https://github.com/LuizGabrielWojtovicz/AtividadeAulaWeb
+   de2b9fa..d5d51ed  master     -> origin/master
+Merge made by the 'ort' strategy.
+ ativ_08.html | 41 ++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 40 insertions(+), 1 deletion(-)
+PS C:\Users\Aluno\Desktop\aula> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.02 KiB | 1.02 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/LuizGabrielWojtovicz/AtividadeAulaWeb.git
+   d5d51ed..a8559c6  master -> master
+PS C:\Users\Aluno\Desktop\aula>-->
