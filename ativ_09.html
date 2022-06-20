@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="local">
+        <img src="/_semafaros/desligado.png" alt="desligado">
+    </p>
+    <button onclick="ativ_09()">Click</button>
+
+    <script>
+        var i = 0;
+        function ativ_09()
+        {
+            i++;
+
+            if(i == 4)
+            {
+                i = 1;
+            }
+
+            if(i == 1)
+            {
+                logVermelho();
+            }
+            else if(i == 2)
+            {
+                logAmarelo();
+            }
+            else if(i == 3)
+            {
+                logVerde();
+            }
+        }
+        function logVermelho()
+        {
+            var vermelho = "/_semafaros/vermelho.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/vermelho.png' alt='vermelho'>";
+        }
+        function logAmarelo()
+        {
+            var vermelho = "/_semafaros/amarelo.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/amarelo.png' alt='amarelo'>";
+        }
+        function logVerde()
+        {
+            var vermelho = "/_semafaros/verde.png"
+            document.getElementById("local").innerHTML = "<img src='/_semafaros/verde.png' alt='verde'>";
+        }
+    </script>
+</body>
+</html>
